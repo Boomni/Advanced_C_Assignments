@@ -14,12 +14,17 @@ int main(void)
 	int i = 0;
 
 	input = getnumber();
-	for (i = 0; i <= input; i++)
-	{
-		n3 = n1 + n2;
-		if (n3 <= input)
-			printf("%d, ", n3);
-	}
+    for (i= 0; i <= input; i++)
+    {
+    
+    if (n1 < input)
+    {
+    printf("%d", n1);
+    n3= n1+n2;
+    n1= n2;
+    n2=n3;
+    }
+    }
 	putchar('\n');
 	return 0;
 }
