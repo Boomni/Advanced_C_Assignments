@@ -1,4 +1,4 @@
-# Write a program to print “Hello” in X format
+# A program to print “Hello” in X format
 # Description:
 
 When the program is run, the provided string should be printed on the terminal in X formation
