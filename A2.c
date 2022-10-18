@@ -17,8 +17,6 @@ int main(void)
 	for (i = 0; i <= input; i++)
 	{
 		n3 = n1 + n2;
-		n1 = n2;
-		n2 = n3;
 		if (n3 <= input)
 			printf("%d, ", n3);
 	}
