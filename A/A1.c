@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int getnumber();
+int getnumber(void);
 
 /**
  * main - checks whether a given number is perfect or not
@@ -9,30 +9,30 @@ int getnumber();
  */
 int main(void)
 {
-	int input = 0;
+	int N = 0;
 	int sum = 0;
 	int i = 0;
 
-	input = getnumber();
+	N = getnumber();
 
-	while (!((input > 0) && (input <= 220)))
+	while (!((N > 0) && (N <= 220)))
 	{
-		if (input < i)
+		if (i > N)
 			printf("Invalid Input\n");
 		else
 			printf("Number out of range\n");
-		input = getnumber();
+		N = getnumber();
 	}
-	for(i = 1; i <= input; i++)
+	for (i = 1; i <= N; i++)
 	{
-        /* If i is a divisor of input */
-		if(input%i == 0)
+		/* If i is a divisor of N */
+		if (N % i == 0)
 		{
 			sum += i;
 		}
 	}
 	/* Check whether the sum of proper divisors is equal to num */
-	if(sum / 2 == input) /* or if (sum == input) */
+	if (sum / 2 == N) /* or if (sum == input) */
 	{
 		printf("Yes, entered number is perfect number\n");
 	}
@@ -40,16 +40,19 @@ int main(void)
 	{
 		printf("No, entered number is not a perfect number\n");
 	}
-	return 0;
+	return (0);
 }
-
-int getnumber()
-{    
+/**
+ * getnumber - gets the input number from users
+ *
+ * Return: number inputed
+ */
+int getnumber(void)
+{
 	int number;
 
 	printf("Enter a number: ");
 	scanf("%d", &number);
 	return (number);
 }
-
 
