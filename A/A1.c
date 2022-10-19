@@ -21,7 +21,7 @@ int main(void)
 			printf("Invalid Input\n");
 		else
 			printf("Number out of range\n");
-		N = getnumber();
+			return (0);
 	}
 	for (i = 1; i <= N; i++)
 	{
@@ -31,8 +31,7 @@ int main(void)
 			sum += i;
 		}
 	}
-	/* Check whether the sum of proper divisors is equal to num */
-	if (sum / 2 == N) /* or if (sum == input) */
+	if (sum / 2 == N)
 	{
 		printf("Yes, entered number is perfect number\n");
 	}
@@ -55,4 +54,3 @@ int getnumber(void)
 	scanf("%d", &number);
 	return (number);
 }
-
