@@ -15,7 +15,7 @@ int main(void)
 
 	if (N > 24 || N < 1)
 	{
-		printf("%s","Number out of range\n");
+		printf("%s", "Number out of range\n");
 		return (0);
 	}
 	for (i = 0; i < N; i++)
