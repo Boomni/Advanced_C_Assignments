@@ -19,13 +19,13 @@ int main(void)
 	{
 		if (i > N)
 			printf("Invalid Input\n");
+			return (0);
 		else
 			printf("Number out of range\n");
 			return (0);
 	}
 	for (i = 1; i <= N; i++)
 	{
-		/* If i is a divisor of N */
 		if (N % i == 0)
 		{
 			sum += i;
